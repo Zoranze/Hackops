@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Retinopathy Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetic Retinopathy Detector</h1>
+        <p>Upload a retinal image to detect signs of diabetic retinopathy.</p>
+
+        <div class="upload-area">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="predictButton">Analyze Image</button>
+        </div>
+
+        <div id="results-container" class="hidden">
+            <h2>Diagnosis Result</h2>
+            <div id="loading" class="hidden">Analyzing...</div>
+            <div id="prediction">
+                <p>Diagnosis: <span id="diagnosisText"></span></p>
+                <p>Confidence: <span id="confidenceText"></span></p>
+            </div>
+        </div>
+
+        <p class="disclaimer">
+            Disclaimer: This is for educational and demonstrational purposes only and is not a substitute for professional medical advice.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

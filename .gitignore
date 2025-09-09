@@ -1,0 +1,14 @@
+# Ignore the entire data folder and its contents
+data/
+
+# Ignore the trained Keras model file
+diabetes_model.h5
+*.h5
+
+# Ignore Python cache folders and files
+__pycache__/
+*.pyc
+
+# Ignore Python virtual environment folders
+venv/
+.venv/
